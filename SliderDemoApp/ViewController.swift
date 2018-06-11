@@ -35,7 +35,9 @@ class ViewController: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
        
+        
         if let touch = touches.first {
+            
             let position = touch.location(in: self.sliderBackView)
             print(position)
             if position.x >= -10.0 && position.x <= (self.sliderBackView.frame.size.width-10)
@@ -106,6 +108,8 @@ class ViewController: UIViewController {
         }
   
 }
+
+
 
 
 extension UIButton {
