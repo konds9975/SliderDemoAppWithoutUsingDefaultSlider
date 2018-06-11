@@ -70,7 +70,8 @@ class SliderView: UIView {
         
         
     }
-    func setSlider(percentage:Int)
+    
+    func setSlider(percentage:Int,animated:Bool?)
     {
         
         let totalWidth = self.frame.size.width-13
@@ -100,10 +101,84 @@ class SliderView: UIView {
 //                //self.percentageLbl.text = "\(Int(percentage))%"
 //            }
             
-            self.leading.constant = position.x
-            self.widthConstraint.constant = position.x+5
+            if animated != nil
+            {
+                if animated!
+                {
             
+                    if timer == nil
+                    {
+                        self.totpercentage = percentage
+                        self.percentage = percentage
+                        self.startTimer()
+                    }
+                    else
+                    {
+                        self.leading.constant = position.x
+                        self.widthConstraint.constant = position.x+5
+                    }
+                }
+                else
+                {
+                    self.leading.constant = position.x
+                    self.widthConstraint.constant = position.x+5
+                }
+            }
+            else
+            {
+                self.leading.constant = position.x
+                self.widthConstraint.constant = position.x+5
+            }
+            
+            
+           
+          
         }
+    }
+    
+    
+    
+    var timer: Timer?
+    var percentage,totpercentage : Int?
+    
+    func startTimer() {
+        
+        if timer == nil {
+            percentage = 0
+            self.timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.loop), userInfo: nil, repeats: true)
+        }
+    }
+    
+    func stopTimer() {
+        if timer != nil {
+            
+            timer?.invalidate()
+            timer = nil
+            percentage = nil
+        }
+    }
+    
+    @objc func loop() {
+        
+        if percentage != nil
+        {
+            percentage = percentage! + 1
+            self.setSlider(percentage: percentage!, animated: true)
+            if percentage == totpercentage
+            {
+                stopTimer()
+            }
+           
+        }
+        else
+        {
+            stopTimer()
+        }
+        
+        
+      
     }
 
 }
+
+

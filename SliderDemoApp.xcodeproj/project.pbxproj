@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A66624320CE6BFB005C70CB /* SiderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66624220CE6BFB005C70CB /* SiderVC.swift */; };
 		1A66624520CE6C6A005C70CB /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66624420CE6C6A005C70CB /* SliderView.swift */; };
+		1A66624720CE8531005C70CB /* DrowingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66624620CE8531005C70CB /* DrowingVC.swift */; };
 		1A889CF620CE353600EFB142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A889CF520CE353600EFB142 /* AppDelegate.swift */; };
 		1A889CF820CE353700EFB142 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A889CF720CE353700EFB142 /* ViewController.swift */; };
 		1A889CFB20CE353700EFB142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A889CF920CE353700EFB142 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		1A66624220CE6BFB005C70CB /* SiderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiderVC.swift; sourceTree = "<group>"; };
 		1A66624420CE6C6A005C70CB /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		1A66624620CE8531005C70CB /* DrowingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowingVC.swift; sourceTree = "<group>"; };
 		1A889CF220CE353600EFB142 /* SliderDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A889CF520CE353600EFB142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A889CF720CE353700EFB142 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				1A889CF720CE353700EFB142 /* ViewController.swift */,
 				1A66624220CE6BFB005C70CB /* SiderVC.swift */,
 				1A66624420CE6C6A005C70CB /* SliderView.swift */,
+				1A66624620CE8531005C70CB /* DrowingVC.swift */,
 				1A889CF920CE353700EFB142 /* Main.storyboard */,
 				1A889CFF20CE353900EFB142 /* Assets.xcassets */,
 				1A889D0120CE353900EFB142 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				1A66624320CE6BFB005C70CB /* SiderVC.swift in Sources */,
 				1A889CF820CE353700EFB142 /* ViewController.swift in Sources */,
 				1A889CFE20CE353700EFB142 /* SliderDemoApp.xcdatamodeld in Sources */,
+				1A66624720CE8531005C70CB /* DrowingVC.swift in Sources */,
 				1A889CF620CE353600EFB142 /* AppDelegate.swift in Sources */,
 				1A66624520CE6C6A005C70CB /* SliderView.swift in Sources */,
 			);

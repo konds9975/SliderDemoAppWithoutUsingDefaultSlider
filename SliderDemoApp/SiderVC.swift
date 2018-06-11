@@ -14,9 +14,12 @@ class SiderVC: UIViewController {
     @IBOutlet weak var slide: SliderView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.slide.setSlider(percentage: 60)
+        self.slide.setSlider(percentage: 60, animated:true)
+       
       
+    }
+    override func viewDidLayoutSubviews() {
+        
     }
 
     override func didReceiveMemoryWarning() {
