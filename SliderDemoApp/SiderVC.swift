@@ -18,7 +18,7 @@ class SiderVC: UIViewController {
         
         self.slide.setSlider(percentage: 60, animated:true)
         self.progress.clear()
-        self.progress.setMaxProgessLeassThan10(progress: 7, fillProgress: 2, pendingProgress: 4)
+        self.progress.setMaxProgessLeassThan10(progress: 10, fillProgress: 2, pendingProgress: 4)
      
     }
  
@@ -136,14 +136,23 @@ class ProgressCustom
                 view.backgroundColor = UIColor.white
             }
             
+            if i<=FP
+            {
+                
+                 view.borderWidth = 0
+                
+            }
+            else
+            if i > FP && i < PP
+            {
+                
+                  view.borderWidth = 0
+                
+            }
+            
         }
         
         
     }
-    
-    
-   
-    
-    
 
 }
